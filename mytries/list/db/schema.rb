@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_22_230622) do
+ActiveRecord::Schema.define(version: 2022_01_23_082345) do
+
+  create_table "steps", force: :cascade do |t|
+    t.text "description"
+    t.integer "tasks_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["tasks_id"], name: "index_steps_on_tasks_id"
+  end
 
   create_table "tasks", force: :cascade do |t|
     t.string "title"
