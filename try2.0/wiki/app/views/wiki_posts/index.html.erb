@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Wiki Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wiki_posts.each do |wiki_post| %>
+      <tr>
+        <td><%= wiki_post.title %></td>
+        <td><%= link_to 'Show', wiki_post %></td>
+        <td><%= link_to 'Edit', edit_wiki_post_path(wiki_post) %></td>
+        <td><%= link_to 'Destroy', wiki_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wiki Post', new_wiki_post_path %>

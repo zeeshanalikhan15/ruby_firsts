@@ -1,0 +1,978 @@
+Started GET "/" for ::1 at 2022-07-16 13:21:46 +0500
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /root/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /root/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-6.1.6.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 31.4ms | Allocations: 604)
+Completed 200 OK in 106ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 4808)
+
+
+Started GET "/" for ::1 at 2022-07-16 13:32:37 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 143)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/crypto/hash:67
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:67:19)
+    at Object.createHash (node:crypto:130:10)
+    at module.exports (/home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/NormalModule.js:503:5
+    at /home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/NormalModule.js:358:12
+    at /home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback (/home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /home/ruby_firsts/try2.0/wiki/node_modules/babel-loader/lib/index.js:59:71 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v17.0.1
+
+  Rendered layout layouts/application.html.erb (Duration: 15729.9ms | Allocations: 19009)
+Completed 500 Internal Server Error in 15738ms (Allocations: 20447)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/ruby_firsts/try2.0/wiki/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-07-16 13:39:04 +0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 364)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/root/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:13:in ``': No such file or directory - yarn (Errno::ENOENT)
+	from /root/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:13:in `initialize'
+	from /root/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `new'
+	from /root/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1994.3ms | Allocations: 8617)
+Completed 500 Internal Server Error in 2030ms (ActiveRecord: 0.0ms | Allocations: 12178)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/ruby_firsts/try2.0/wiki/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-07-16 13:43:27 +0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 364)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+node:internal/crypto/hash:67
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:67:19)
+    at Object.createHash (node:crypto:130:10)
+    at module.exports (/home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/NormalModule.js:503:5
+    at /home/ruby_firsts/try2.0/wiki/node_modules/webpack/lib/NormalModule.js:358:12
+    at /home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback (/home/ruby_firsts/try2.0/wiki/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /home/ruby_firsts/try2.0/wiki/node_modules/babel-loader/lib/index.js:59:71 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v17.0.1
+
+  Rendered layout layouts/application.html.erb (Duration: 5219.9ms | Allocations: 8630)
+Completed 500 Internal Server Error in 5254ms (ActiveRecord: 0.0ms | Allocations: 12191)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/ruby_firsts/try2.0/wiki/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-07-16 13:44:26 +0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 364)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ruby_firsts/try2.0/wiki/public/packs
+[Webpacker] Hash: 0fe7dcd9d8f9ebcf52de
+Version: webpack 4.46.0
+Time: 3989ms
+Built at: 07/16/2022 1:44:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2e212f7c8f867558ac6e.js    121 KiB  application  [emitted] [immutable]  application
+js/application-2e212f7c8f867558ac6e.js.map    136 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2e212f7c8f867558ac6e.js js/application-2e212f7c8f867558ac6e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8792.5ms | Allocations: 7690)
+Completed 200 OK in 8827ms (Views: 8803.7ms | ActiveRecord: 0.0ms | Allocations: 11303)
+
+
+Started GET "/" for ::1 at 2022-07-16 13:45:58 +0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.2ms | Allocations: 6475)
+Completed 200 OK in 97ms (Views: 72.6ms | ActiveRecord: 0.0ms | Allocations: 10207)
+
+
+Started GET "/" for ::1 at 2022-07-16 13:47:05 +0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 6467)
+Completed 200 OK in 103ms (Views: 75.0ms | ActiveRecord: 0.0ms | Allocations: 10199)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateWikiPosts (20220716084847)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "wiki_posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220716084847"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-07-16 08:51:27.834484"], ["updated_at", "2022-07-16 08:51:27.834484"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/wiki_posts" for ::1 at 2022-07-16 13:52:12 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.9ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1301)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 250.8ms | Allocations: 16452)
+Completed 200 OK in 272ms (Views: 255.9ms | ActiveRecord: 0.9ms | Allocations: 18640)
+
+
+Started GET "/wiki_posts.jason" for ::1 at 2022-07-16 13:52:25 +0500
+Processing by WikiPostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.6ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 3813)
+Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.6ms | Allocations: 4532)
+
+
+Started GET "/wiki_posts.jason" for ::1 at 2022-07-16 13:52:28 +0500
+Processing by WikiPostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.6ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 3827)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.6ms | Allocations: 4296)
+
+
+Started GET "/wiki_posts.json" for ::1 at 2022-07-16 13:52:37 +0500
+Processing by WikiPostsController#index as JSON
+  Rendering wiki_posts/index.json.jbuilder
+  [1m[36mWikiPost Load (0.6ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.json.jbuilder:1
+  Rendered collection of wiki_posts/_wiki_post.json.jbuilder [0 times] (Duration: 0.3ms | Allocations: 51)
+  Rendered wiki_posts/index.json.jbuilder (Duration: 11.1ms | Allocations: 1148)
+Completed 200 OK in 21ms (Views: 16.7ms | ActiveRecord: 0.6ms | Allocations: 2553)
+
+
+Started GET "/wiki_posts.jason" for ::1 at 2022-07-16 13:52:39 +0500
+Processing by WikiPostsController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.9ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 725)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 3802)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.9ms | Allocations: 4264)
+
+
+Started GET "/" for ::1 at 2022-07-16 23:19:33 +0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.2ms | Allocations: 12491)
+Completed 200 OK in 82ms (Views: 72.5ms | ActiveRecord: 0.0ms | Allocations: 16130)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-16 23:25:50 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 5499)
+Completed 200 OK in 28ms (Views: 22.2ms | ActiveRecord: 0.9ms | Allocations: 7655)
+
+
+Started GET "/wiki_posts/example" for ::1 at 2022-07-16 23:25:55 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"example"}
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts" WHERE "wiki_posts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/wiki_posts_controller.rb:63:in `set_wiki_post'
+Completed 404 Not Found in 7ms (ActiveRecord: 1.6ms | Allocations: 2645)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find WikiPost with 'id'=example):
+  
+app/controllers/wiki_posts_controller.rb:63:in `set_wiki_post'
+Started GET "/wiki_posts/example" for ::1 at 2022-07-16 23:27:45 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"example"}
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/example.html.erb within layouts/application
+  Rendered wiki_posts/example.html.erb within layouts/application (Duration: 0.6ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3629)
+Completed 200 OK in 16ms (Views: 15.1ms | Allocations: 4605)
+
+
+Started GET "/wiki_posts/show" for ::1 at 2022-07-16 23:34:04 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/example.html.erb within layouts/application
+  Rendered wiki_posts/example.html.erb within layouts/application (Duration: 0.7ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 3734)
+Completed 200 OK in 46ms (Views: 45.2ms | Allocations: 5203)
+
+
+Started GET "/wiki_posts/edit" for ::1 at 2022-07-16 23:34:08 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/example.html.erb within layouts/application
+  Rendered wiki_posts/example.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3105)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 3575)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-16 23:34:22 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1919)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 5154)
+Completed 200 OK in 21ms (Views: 15.9ms | ActiveRecord: 0.7ms | Allocations: 6391)
+
+
+Started GET "/" for ::1 at 2022-07-16 23:39:05 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1121)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1197)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2632)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<br/>
+<br/>
+<br/>
+
+<%= link_to 'About page' redirect_to welcome_about_path %>
+
+):
+1:    <h1>Welcome#index</h1>
+2:    <p>Find me in app/views/welcome/index.html.erb</p>
+3:    
+4:    <br/>
+5:    <br/>
+6:    <br/>
+7:    
+8:    <%= link_to 'About page' redirect_to welcome_about_path %>
+  
+app/views/welcome/index.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/welcome/index.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/welcome/index.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/welcome/index.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/welcome/index.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+app/views/welcome/index.html.erb:8: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/" for ::1 at 2022-07-16 23:40:07 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 34.1ms | Allocations: 4254)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 4329)
+Completed 500 Internal Server Error in 45ms (Allocations: 5671)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `welcome_about_path' for #<ActionView::Base:0x0000000000ade8>
+Did you mean?  welcome_index_path):
+    5: <br/>
+    6: <br/>
+    7: 
+    8: <%= link_to 'About page', welcome_about_path %>
+  
+app/views/welcome/index.html.erb:8
+Started GET "/" for ::1 at 2022-07-16 23:40:55 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 88.5ms | Allocations: 3941)
+Completed 200 OK in 93ms (Views: 91.6ms | Allocations: 4712)
+
+
+Started GET "/welcome/about" for ::1 at 2022-07-16 23:41:00 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3259)
+Completed 200 OK in 13ms (Views: 10.5ms | Allocations: 3931)
+
+
+Started GET "/" for ::1 at 2022-07-16 23:41:43 +0500
+  
+SyntaxError (/home/ruby_firsts/try2.0/wiki/config/routes.rb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+  get '/about': redirect_to 'welcome/about'
+                            ^
+):
+  
+config/routes.rb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+Started GET "/" for ::1 at 2022-07-16 23:41:51 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for ::1 at 2022-07-16 23:42:46 +0500
+  
+SyntaxError (/home/ruby_firsts/try2.0/wiki/config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+...get '/about', to: redirect_to ('welcome/about')
+...                              ^
+):
+  
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+Started GET "/" for ::1 at 2022-07-16 23:43:17 +0500
+  
+SyntaxError (/home/ruby_firsts/try2.0/wiki/config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+...get '/about', to: redirect_to ('/welcome/about')
+...                              ^
+):
+  
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+Started GET "/" for ::1 at 2022-07-16 23:44:11 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3439)
+Completed 200 OK in 14ms (Views: 13.6ms | Allocations: 4212)
+
+
+Started GET "/" for ::1 at 2022-07-16 23:44:38 +0500
+  
+SyntaxError (/home/ruby_firsts/try2.0/wiki/config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+  get '/about', redirect_to ('/welcome/about')
+                            ^
+):
+  
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected ( arg, expecting `do' or '{' or '('
+Started GET "/" for ::1 at 2022-07-16 23:45:03 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 3488)
+Completed 200 OK in 28ms (Views: 26.7ms | Allocations: 4262)
+
+
+Started GET "/welcome/about" for ::1 at 2022-07-16 23:45:07 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3222)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 3717)
+
+
+Started GET "/about" for ::1 at 2022-07-16 23:45:12 +0500
+Started GET "/welcome/about" for ::1 at 2022-07-16 23:45:12 +0500
+Processing by WelcomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 3120)
+Completed 200 OK in 29ms (Views: 26.9ms | Allocations: 3560)
+
+
+Started GET "/" for ::1 at 2022-07-18 23:55:13 +0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 554)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 7391)
+Completed 200 OK in 65ms (Views: 53.0ms | ActiveRecord: 0.0ms | Allocations: 11026)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-18 23:55:22 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.4ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1278)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 4579)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.4ms | Allocations: 6480)
+
+
+Started GET "/wiki_posts/example" for ::1 at 2022-07-18 23:55:42 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"example"}
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1601)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1679)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2316)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"wiki_posts", :id=>nil}, missing required keys: [:id]):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <%= link_to 'Edit', edit_wiki_post_path(@wiki_post) %> |
+    4: <%= link_to 'Back', wiki_posts_path %>
+  
+app/views/wiki_posts/show.html.erb:3
+Started GET "/wiki_posts/example" for ::1 at 2022-07-18 23:56:28 +0500
+Processing by WikiPostsController#example as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/example.html.erb within layouts/application
+  Rendered wiki_posts/example.html.erb within layouts/application (Duration: 1.3ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 3541)
+Completed 200 OK in 22ms (Views: 20.6ms | Allocations: 4637)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddTitleToWikiPost (20220718185759)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "wiki_posts" ADD "title" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220718185759"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddBodyToWikiPost (20220718185830)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "wiki_posts" ADD "body" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220718185830"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:01:43 +0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 4249)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 5647)
+
+
+Started GET "/wiki_posts/1" for ::1 at 2022-07-19 00:05:25 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1077)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1145)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1611)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"wiki_posts", :id=>nil}, missing required keys: [:id]):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <%= link_to 'Edit', edit_wiki_post_path(@wiki_post) %> |
+    4: <%= link_to 'Back', wiki_posts_path %>
+  
+app/views/wiki_posts/show.html.erb:3
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mWikiPost Create (1.5ms)[0m  [1m[32mINSERT INTO "wiki_posts" ("created_at", "updated_at", "title", "body") VALUES (?, ?, ?, ?)[0m  [["created_at", "2022-07-18 19:08:30.127664"], ["updated_at", "2022-07-18 19:08:30.127664"], ["title", "My First Post"], ["body", "Wow this is so cool"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/wiki_posts/1" for ::1 at 2022-07-19 00:08:41 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1066)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1135)
+Completed 500 Internal Server Error in 2ms (Allocations: 1551)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"wiki_posts", :id=>nil}, missing required keys: [:id]):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <%= link_to 'Edit', edit_wiki_post_path(@wiki_post) %> |
+    4: <%= link_to 'Back', wiki_posts_path %>
+  
+app/views/wiki_posts/show.html.erb:3
+Started GET "/wiki_posts/1" for ::1 at 2022-07-19 00:10:53 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/wiki_posts_controller.rb:66:in `set_wiki_post'
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts" WHERE "wiki_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wiki_posts_controller.rb:66:in `set_wiki_post'
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3521)
+Completed 200 OK in 25ms (Views: 12.2ms | ActiveRecord: 2.1ms | Allocations: 10259)
+
+
+Started GET "/wiki_posts/1" for ::1 at 2022-07-19 00:13:48 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWikiPost Load (0.4ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts" WHERE "wiki_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wiki_posts_controller.rb:66:in `set_wiki_post'
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 382)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3854)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.4ms | Allocations: 5925)
+
+
+Started GET "/wiki_posts/1" for ::1 at 2022-07-19 00:14:09 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWikiPost Load (0.6ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts" WHERE "wiki_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wiki_posts_controller.rb:66:in `set_wiki_post'
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1219)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1294)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms | Allocations: 3267)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1><%= @wiki_post.title %></h1>
+<p><%= @wiki_post.body %></p>
+
+<%= render, wiki_post: @wiki_post %>
+
+<%= link_to 'Edit', edit_wiki_post_path(@wiki_post) %> |
+<%= link_to 'Back', wiki_posts_path %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1><%= @wiki_post.title %></h1>
+4:    <p><%= @wiki_post.body %></p>
+5:    
+6:    <%= render, wiki_post: @wiki_post %>
+7:    
+8:    <%= link_to 'Edit', edit_wiki_post_path(@wiki_post) %> |
+9:    <%= link_to 'Back', wiki_posts_path %>
+  
+app/views/wiki_posts/show.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/wiki_posts/show.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/wiki_posts/show.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/wiki_posts/show.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/wiki_posts/show.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/wiki_posts/show.html.erb:6: syntax error, unexpected label, expecting '='
+Started GET "/wiki_posts/1" for ::1 at 2022-07-19 00:14:31 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWikiPost Load (0.4ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts" WHERE "wiki_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wiki_posts_controller.rb:66:in `set_wiki_post'
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3862)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.4ms | Allocations: 5891)
+
+
+Started GET "/wiki_posts/1/edit" for ::1 at 2022-07-19 00:14:34 +0500
+Processing by WikiPostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts" WHERE "wiki_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wiki_posts_controller.rb:66:in `set_wiki_post'
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/edit.html.erb within layouts/application
+  Rendered wiki_posts/_form.html.erb (Duration: 25.8ms | Allocations: 3782)
+  Rendered wiki_posts/edit.html.erb within layouts/application (Duration: 27.3ms | Allocations: 4209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 7290)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.3ms | Allocations: 8625)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:14:42 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.4ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4336)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.4ms | Allocations: 4948)
+
+
+Started GET "/wiki_posts/1" for ::1 at 2022-07-19 00:14:46 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts" WHERE "wiki_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wiki_posts_controller.rb:66:in `set_wiki_post'
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3305)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 4340)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:14:47 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 880)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4053)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 4519)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:15:59 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.4ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1323)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4794)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.4ms | Allocations: 6141)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:16:29 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1264)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1339)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2695)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Wiki Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wiki_posts.each do |wiki_post| %>
+      <tr>
+        <td>Title: <%= wiki_post,title %></td>
+        <td><%= link_to 'Show', wiki_post %></td>
+        <td><%= link_to 'Edit', edit_wiki_post_path(wiki_post) %></td>
+        <td><%= link_to 'Destroy', wiki_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wiki Post', new_wiki_post_path %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Wiki Posts</h1>
+4:    
+5:    <table>
+6:      <thead>
+7:        <tr>
+8:          <th colspan="4"></th>
+9:        </tr>
+10:      </thead>
+11:    
+12:      <tbody>
+13:        <% @wiki_posts.each do |wiki_post| %>
+14:          <tr>
+15:            <td>Title: <%= wiki_post,title %></td>
+16:            <td><%= link_to 'Show', wiki_post %></td>
+17:            <td><%= link_to 'Edit', edit_wiki_post_path(wiki_post) %></td>
+18:            <td><%= link_to 'Destroy', wiki_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+19:          </tr>
+20:        <% end %>
+21:      </tbody>
+22:    </table>
+23:    
+24:    <br>
+25:    
+26:    <%= link_to 'New Wiki Post', new_wiki_post_path %>
+  
+app/views/wiki_posts/index.html.erb:15: syntax error, unexpected ')', expecting '='
+app/views/wiki_posts/index.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:15: syntax error, unexpected ')', expecting '='
+app/views/wiki_posts/index.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:15: syntax error, unexpected ')', expecting '='
+app/views/wiki_posts/index.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:15: syntax error, unexpected ')', expecting '='
+app/views/wiki_posts/index.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:15: syntax error, unexpected ')', expecting '='
+app/views/wiki_posts/index.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:29: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:15: syntax error, unexpected ')', expecting '='
+app/views/wiki_posts/index.html.erb:20: syntax error, unexpected `end', expecting ')'
+app/views/wiki_posts/index.html.erb:29: syntax error, unexpected `end', expecting ')'
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:16:44 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.5ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 4802)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.5ms | Allocations: 6201)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:16:57 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4783)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.3ms | Allocations: 6173)
+
+
+Started GET "/wiki_posts/1" for ::1 at 2022-07-19 00:16:59 +0500
+Processing by WikiPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts" WHERE "wiki_posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/wiki_posts_controller.rb:66:in `set_wiki_post'
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/show.html.erb within layouts/application
+  Rendered wiki_posts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 271)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3366)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 4685)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:17:01 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 4048)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 4514)
+
+
+Started GET "/" for ::1 at 2022-07-19 00:17:05 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3524)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 4726)
+
+
+Started GET "/" for ::1 at 2022-07-19 00:18:39 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 304)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3792)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 5181)
+
+
+Started GET "/" for ::1 at 2022-07-19 00:18:54 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3777)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 5148)
+
+
+Started GET "/wiki_posts" for ::1 at 2022-07-19 00:18:58 +0500
+Processing by WikiPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering wiki_posts/index.html.erb within layouts/application
+  [1m[36mWikiPost Load (0.3ms)[0m  [1m[34mSELECT "wiki_posts".* FROM "wiki_posts"[0m
+  ↳ app/views/wiki_posts/index.html.erb:13
+  Rendered wiki_posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4664)
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.3ms | Allocations: 5886)
+
+
+Started GET "/" for ::1 at 2022-07-19 00:19:08 +0500
+Processing by WelcomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3183)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 3675)
+
+
